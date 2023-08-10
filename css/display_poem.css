@@ -1,0 +1,78 @@
+/* ----- Containers ----- */
+#display-poem-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;   
+}
+
+#display-poem-content-container {
+    text-align: left;
+}
+
+#download-btn-container,
+#title-author-container {
+    height: auto;
+}
+
+#title-author-container {
+    position: relative;
+    overflow: hidden;
+}
+
+#download-btn-container {
+    width: 100%;
+}
+
+#download-btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#title,
+#author,
+#download-btn {
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+#title,
+#author {
+    font-size: 1em;
+    transform: translateY(1000%);
+}
+
+#download-btn {
+    opacity: 0;
+}
+
+#download-btn img {
+    width: 50px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) { 
+    #display-poem,
+    #title,
+    #author {
+        font-size: 0.85em;
+    }
+
+    #download-btn img {
+        width: 30px;
+    }
+}
+
+@media only screen and
+(max-width: 812px) and
+(orientation: landscape) { 
+    #display-poem,
+    #title,
+    #author {
+        font-size: 0.85em;
+    }
+
+    #download-btn img {
+        width: 30px;
+    }
+}
